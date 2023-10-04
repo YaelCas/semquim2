@@ -1,4 +1,4 @@
-import streamlit as st
+e import streamlit as st
 import tensorflow as tf
 import numpy as np
 from scipy.ndimage.interpolation import zoom
@@ -21,8 +21,9 @@ if np.any(canvas_result.image_data):
     prediction = model.predict(processed_image).argmax()
     # Display prediction
     st.header('Prediction:')
-    st.markdown('This number appears to be a \n # :red[' + str(prediction) + ']')
+    st.markdown('Creo que este numero es un: \n # :red[' + str(prediction) + ']')
+  st.ballons()
 else:
     # Display message if canvas is empty
     st.header('Prediction:')
-    st.write('No number drawn, please draw a digit to get a prediction.')
+    st.write('Por favor dibuje un numero')
