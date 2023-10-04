@@ -6,6 +6,8 @@ from streamlit_drawable_canvas import st_canvas
 from utils import process_image
 st.markdown("# Aplicacion de reconocimiento de numeros <3     ¯\_(ツ)_/¯      (☞ﾟヮﾟ)☞")
 
+st.image("https://upload.wikimedia.org/wikipedia/commons/2/27/MnistExamples.png?20171214143425")
+
 # Load trained model
 model = tf.keras.models.load_model('mi_modelo.h5')
 
