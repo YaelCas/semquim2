@@ -4,7 +4,7 @@ import numpy as np
 from scipy.ndimage.interpolation import zoom
 from streamlit_drawable_canvas import st_canvas
 from utils import process_image
-st.markdown("# :green[Aplicacion de reconocimiento de numeros <3]     ¯\_(ツ)_/¯      (☞ﾟヮﾟ)☞")
+st.markdown("# :blue[Aplicacion de reconocimiento de numeros <3]     ¯\_(ツ)_/¯      (☞ﾟヮﾟ)☞")
 
 # Load trained model
 model = tf.keras.models.load_model('mi_modelo.h5')
