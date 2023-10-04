@@ -22,9 +22,9 @@ if np.any(canvas_result.image_data):
     # Make prediction using model
     prediction = model.predict(processed_image).argmax()
     # Display prediction
-    st.header('Resultado:')
+    st.header(':red[Resultado:]')
     st.markdown('Creo que este numero es un: \n # :red[' + str(prediction) + ']')
 else:
     # Display message if canvas is empty
-    st.header('Resultado:')
+    st.header(':red[Resultado:]')
     st.write('Por favor dibuje un numero')
