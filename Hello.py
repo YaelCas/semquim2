@@ -9,7 +9,7 @@ st.markdown("# Aplicacion de reconocimiento de numeros <3     ¯\_(ツ)_/¯     
 # Load trained model
 model = tf.keras.models.load_model('mi_modelo.h5')
 
-st.write('Draw a digit:')
+st.write('Dibuja un numero porfis 👉👈:')
 # Display canvas for drawing
 canvas_result = st_canvas(stroke_width=10, height=28*5, width=28*5)
   
